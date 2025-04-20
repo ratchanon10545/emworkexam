@@ -67,9 +67,10 @@
                 </a>
             
             </form>
-            <div class="mb-2">
+            <div class="mb-2 flex items-center space-x-2">
                 <a class="bg-blue-600 w-15 text-white rounded-md p-2 " href="{{route('users.age_chart')}}">
                     Graph</a>
+                    <p>Users total : {{count($users)}}</p>
             </div>
         </div>
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -144,7 +145,7 @@
     </div>
     <script>
         function confirmSubmit() {
-            return confirm("Are you sure to delete this product?");
+            return confirm("Are you sure to delete this user?");
         }
     </script>
 @endsection

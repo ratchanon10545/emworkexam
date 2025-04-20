@@ -13,3 +13,7 @@ Route::put('/users/{user}', [UserDataController::class, 'update'])->name('user.u
 Route::delete('/users/{user}', [UserDataController::class, 'delete'])->name('user.delete');
 Route::get('/users-agechart', [UserDataController::class, 'showAgeChart'])->name('users.age_chart');
 Route::get('/users-agereport', [UserDataController::class, 'ageReport'])->name('users.age_report');
+
+Route::get('/temples', function () {
+    return view('temples.temples2');
+});
